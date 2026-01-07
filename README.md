@@ -21,7 +21,7 @@ Installation
 
 First, clone the repository and install the necessary dependencies:
 
-git clone [https://github.com/yourusername/denoising-fairness.git](https://github.com/yourusername/denoising-fairness.git)
+git clone [https://github.com/Jacdencity/denoising-fairness.git](https://github.com/Jacdencity/denoising-fairness.git)
 cd denoising-fairness
 pip install -r requirements.txt
 
