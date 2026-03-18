@@ -43,7 +43,7 @@ if __name__ == "__main__":
     dataset = BenchmarkDataset(Config.INPUT_DIR)
     n = len(dataset)
     if n == 0: raise ValueError("No data found")
-    train_n = int(0.9 * n)
+    train_n = int(0.8 * n)
     train_ds, test_ds = torch.utils.data.Subset(dataset, range(train_n)), torch.utils.data.Subset(dataset, range(train_n, n))
     train_loader = DataLoader(train_ds, batch_size=Config.BATCH_SIZE, shuffle=True, num_workers=Config.NUM_WORKERS, pin_memory=Config.PIN_MEMORY)
     test_loader = DataLoader(test_ds, batch_size=1, shuffle=False, num_workers=Config.NUM_WORKERS, pin_memory=Config.PIN_MEMORY)
